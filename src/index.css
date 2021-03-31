@@ -1,0 +1,33 @@
+body, #root {
+    @apply bg-blue-500;
+}
+
+@responsive {
+    .film-title {
+        @apply text-3xl font-bold pr-8 pl-0 text-left;
+    }
+
+    .mobile-film-title {
+        @apply text-2xl font-bold px-4 text-center;
+    }
+
+    .film-stats {
+        @apply py-0 border-0 bg-transparent text-left block;
+    }
+
+    .mobile-film-stats {
+        @apply py-3 border-t border-b border-blue-200 bg-blue-900 text-center;
+    }
+}
+
+#cast > div::after,
+#recommendations > div::after  {
+    content: '';
+    position: absolute;
+    width: 2%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0) 40%, rgba(59,130,246,1) 100%);
+}

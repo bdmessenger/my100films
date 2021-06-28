@@ -1,15 +1,12 @@
 ﻿# My 100 Films
 Web application showcasing a list of hundred films and have the ability to view a film's release information by using <a href="https://www.themoviedb.org/documentation/api">TMDb's API</a>.  
-https://films.brant.work/
 
 ### API Routes:
 */film/:id* -- To view a film's release information. The id can be obtained by searching a film at <a href="https://www.themoviedb.org">TMDb</a>.  
 **Example**: https://www.themoviedb.org/movie/157336-interstellar => .../film/157336  
-**Test**: https://films.brant.work/film/157336
 
 /list/:id -- To view a list of movies that a user has created on TMDb.  
 **Example**: https://www.themoviedb.org/list/5802933 => .../list/5802933  
-**Test**: https://films.brant.work/list/5802933
 
 ### Installation
 
